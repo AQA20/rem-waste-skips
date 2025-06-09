@@ -38,7 +38,7 @@ function App() {
         </div>
 
         {/* Mobile Stepper + ListItems */}
-        <div className="col-span-1 lg:col-span-6 bg-amber-50">
+        <div className="col-span-1 lg:col-span-6">
           <MobileStepper className="block lg:hidden mb-4" />
           <section className="px-4">
             <h2>Choose Your Skip Size</h2>
