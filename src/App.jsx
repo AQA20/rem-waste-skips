@@ -31,22 +31,21 @@ function App() {
 
   return (
     <main>
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Desktop Stepper */}
-        <div className="hidden lg:block lg:col-span-4 mt-3">
+        <div className="hidden lg:block lg:col-span-3 mt-3 lg:col-start-2">
           <VerticalStepper />
         </div>
 
         {/* Mobile Stepper + ListItems */}
-        <div className="col-span-1 lg:col-span-6">
+        <div className="col-span-1 lg:col-span-7">
           <MobileStepper className="block lg:hidden mb-4" />
-          <section className="px-4">
+          <section className="">
             <h2>Choose Your Skip Size</h2>
             <p className="text-muted-foreground">
               Select the skip size that best suits your needs
             </p>
           </section>
-
           <ListItems skips={skips} />
         </div>
       </section>

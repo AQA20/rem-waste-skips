@@ -8,7 +8,7 @@ const ListItems = ({ skips, className }) => {
   const skip = skips.find((skip) => skip.id === skipId)
   return (
     <section
-      className={clsx('flex flex-wrap justify-center gap-4 max-w-full overflow-hidden px-2 py-5 ', className, {
+      className={clsx('flex flex-wrap justify-center gap-4 max-w-full py-5 ', className, {
         'mb-70 md:mb-44': Boolean(skip),
       })}
     >

@@ -2,7 +2,7 @@ const steps = 6
 
 const MobileStepper = ({ currentStep = 3, className }) => {
   return (
-    <div className={`px-4 py-2 ${className} overflow-hidden max-w-full`}>
+    <div className={`py-2 ${className} overflow-hidden max-w-full`}>
       <div className="flex justify-between items-center gap-1">
         {Array.from({ length: steps }).map((_, index) => {
           const isCompleted = index < currentStep

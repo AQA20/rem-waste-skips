@@ -28,7 +28,7 @@ const SummaryFooter = ({ price, period, size, show }) => {
           <div className="w-full flex items-center md:block md:w-auto">
             <Button title="Back" className="mr-2 md:w-fit bg-primary-foreground" onClick={() => window.history.back()} />
             <Button
-              title="continue"
+              title="Continue"
               className="!bg-primary text-background w-full md:w-fit"
               icon={Next}
             />

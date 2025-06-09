@@ -1,25 +1,26 @@
 @import 'tailwindcss';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 @theme {
-  --color-background: #FFFFFF;
-  --color-surface: #F4F4F5;
-  --color-surface-secondary: oklch(0.27 0.00 0);
+  --color-background: #ffffff;
+  --color-surface: #f4f4f5;
+  --color-surface-secondary: oklch(0.27 0 0);
   --color-primary: oklch(0.541 0.281 293.009);
   --color-primary-lighter: oklch(0.61 0.22 293);
-  --color-foreground: #18181B;
-  --color-primary-foreground: #FAFAFA;
-  --color-muted-foreground: #71717A;
-  --color-success-foreground: #DCFCE7;
+  --color-foreground: #18181b;
+  --color-primary-foreground: #fafafa;
+  --color-muted-foreground: #71717a;
+  --color-success-foreground: #dcfce7;
   --color-yellow-skip: #facc15;
   --color-primary-hover: #3200a3;
   --color-card: oklch(0.21 0.006 285.885);
-  --color-border: #E4E4E7;
+  --color-border: #e4e4e7;
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -52,10 +53,9 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0.75rem;
+  line-height: 2rem;
 }
 
 h3 {
@@ -66,21 +66,12 @@ h3 {
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 640px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1rem;
+  body {
+    padding: 0 16px 32px 16px;
   }
 }

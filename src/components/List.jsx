@@ -21,7 +21,7 @@ const List = ({
   return (
     <section
       className={clsx(
-        'w-full p-6 rounded-[12px] bg-background relative cursor-pointer z-10',
+        'w-full p-5 rounded-[12px] bg-background relative cursor-pointer z-10',
         {
           'outline-[3px] outline-primary': isSelected,
         }
@@ -31,8 +31,8 @@ const List = ({
       <section>
         <span
           className="
-          bg-success-foreground rounded-[13px] p-2 text-[14px] text-[#15803D] absolute w-22 
-          md:w-20 h-8 top-2 left-2 flex items-center justify-center
+          bg-success-foreground rounded-[13px] p-2 text-[14px] text-[#15803D] absolute
+          w-[74px] h-6 top-3 left-2 flex items-center justify-center
         "
         >
           {highlight}
@@ -55,9 +55,13 @@ const List = ({
             />
           </div>
           <section>
-            <h3>{title}</h3>
-            <p className="text-muted-foreground !text-[12px] md:!text-[14px]">{subtitle}</p>
-            <h2 className="text-primary-lighter">{price}</h2>
+            <div className="text-4 font-semibold">{title}</div>
+            <div className="text-muted-foreground !text-[12px] md:!text-[14px]">
+              {subtitle}
+            </div>
+            <div className="text-primary-lighter text-[18px] font-bold">
+              {price}
+            </div>
           </section>
         </section>
         <input
@@ -68,37 +72,39 @@ const List = ({
           className="accent-primary h-6 w-6 cursor-pointer"
         />
       </section>
-      <hr className="text-border py-2" />
-      {isAllowedOnTheRoad ? (
-        <div className="flex items-center gap-2 h-5">
-          <TickIcon className="w-[14px] h-[14px] text-[#16A34A]" />
-          <div className="text-muted-foreground text-[14px]">
-            Allowed on the road
+      <hr className="text-border my-2" />
+      <section className="pt-2">
+        {isAllowedOnTheRoad ? (
+          <div className="flex items-center gap-2 h-5">
+            <TickIcon className="w-[14px] h-[14px] text-[#16A34A]" />
+            <div className="text-muted-foreground text-[14px]">
+              Allowed on the road
+            </div>
           </div>
-        </div>
-      ) : (
-        <div className="flex items-center gap-2 h-5">
-          <CloseIcon className="w-[14px] h-[14px] text-[#DC2626]" />
-          <div className="text-muted-foreground text-[14px]">
-            Not allowed on the road
+        ) : (
+          <div className="flex items-center gap-2 h-5">
+            <CloseIcon className="w-[14px] h-[14px] text-[#DC2626]" />
+            <div className="text-muted-foreground text-[14px]">
+              Not allowed on the road
+            </div>
           </div>
-        </div>
-      )}
-      {isSuitableForHeavyWaste ? (
-        <div className="flex items-center gap-2 h-5">
-          <TickIcon className="w-[14px] h-[14px] text-[#16A34A]" />
-          <div className="text-muted-foreground text-[14px]">
-            Suitable For Heavy Waste
+        )}
+        {isSuitableForHeavyWaste ? (
+          <div className="flex items-center gap-2 h-5">
+            <TickIcon className="w-[14px] h-[14px] text-[#16A34A]" />
+            <div className="text-muted-foreground text-[14px]">
+              Suitable For Heavy Waste
+            </div>
           </div>
-        </div>
-      ) : (
-        <div className="flex items-center gap-2 h-5">
-          <CloseIcon className="w-[14px] h-[14px] text-[#DC2626]" />
-          <div className="text-muted-foreground text-[14px]">
-            Not Suitable For Heavy Waste
+        ) : (
+          <div className="flex items-center gap-2 h-5">
+            <CloseIcon className="w-[14px] h-[14px] text-[#DC2626]" />
+            <div className="text-muted-foreground text-[14px]">
+              Not Suitable For Heavy Waste
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </section>
     </section>
   )
 }
