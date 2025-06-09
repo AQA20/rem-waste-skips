@@ -31,7 +31,7 @@ function App() {
 
   return (
     <main>
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start mt-6">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Desktop Stepper */}
         <div className="hidden lg:block lg:col-span-4">
           <VerticalStepper />
