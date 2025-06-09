@@ -33,12 +33,12 @@ function App() {
     <main>
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Desktop Stepper */}
-        <div className="hidden lg:block lg:col-span-4">
+        <div className="hidden lg:block lg:col-span-4 mt-3">
           <VerticalStepper />
         </div>
 
         {/* Mobile Stepper + ListItems */}
-        <div className="col-span-1 lg:col-span-8">
+        <div className="col-span-1 lg:col-span-6 bg-amber-50">
           <MobileStepper className="block lg:hidden mb-4" />
           <section className="px-4">
             <h2>Choose Your Skip Size</h2>
