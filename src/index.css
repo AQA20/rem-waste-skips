@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-background: #FFFFFF;
+  --color-surface: #F4F4F5;
+  --color-surface-secondary: oklch(0.27 0.00 0);
+  --color-primary: oklch(0.541 0.281 293.009);
+  --color-primary-lighter: oklch(0.61 0.22 293);
+  --color-foreground: #18181B;
+  --color-primary-foreground: #FAFAFA;
+  --color-muted-foreground: #71717A;
+  --color-success-foreground: #DCFCE7;
+  --color-yellow-skip: #facc15;
+  --color-primary-hover: #3200a3;
+  --color-card: oklch(0.21 0.006 285.885);
+  --color-border: #E4E4E7;
+}
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-foreground);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--color-surface);
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  max-width: 1280px !important;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* ✅ Base Typography Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
