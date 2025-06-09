@@ -56,7 +56,7 @@ const List = ({
           </div>
           <section>
             <h3>{title}</h3>
-            <p className="text-muted-foreground !text-[14px]">{subtitle}</p>
+            <p className="text-muted-foreground !text-[12px] md:!text-[14px]">{subtitle}</p>
             <h2 className="text-primary-lighter">{price}</h2>
           </section>
         </section>
