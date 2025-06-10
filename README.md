@@ -1,5 +1,7 @@
 # REM Waste Skips Page
 
+## Live Demo
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-007bff?style=for-the-badge&logo=github)](https://rem-waste-skips.vercel.app/)
 
 ## How to use this project?
 
